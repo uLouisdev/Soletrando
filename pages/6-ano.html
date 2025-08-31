@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soletrando</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <a href="../index.html"><h1>SOLETRANDO</h1></a>
+    <h3 style="text-align: center;">6º ano</h3>
+    <div class="digitar">
+        <form onsubmit="" id="formDigitar">
+            <input type="text" name="palavra" id="textoDigitado" autocomplete="off" placeholder="Digite a palavra aqui">
+            <input type="submit" id="enviar">
+        </form>
+    </div>
+    <div class="areas">
+        <div class="area-sorteio">
+            <h3>O numero sorteado foi:</h3>
+            <p id="valor">_</p>
+            <button id="clique">Sortear</button>
+        </div>
+        <div class="area-timer">
+            <h3>Tempo para soletrar:</h3>
+            <p id="tempo">10.0</p>
+            <button id="iniciarTempo">Iniciar</button>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/scriptGeral.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("formDigitar")
+            const input = document.getElementById("textoDigitado")
+
+            form.addEventListener("submit", function(evento) {
+                evento.preventDefault()
+
+                valor = input.value.trim()
+                const bancoDePalavras = ["português", "poesia", "abacate", "maxixe", "hortaliça", "salsa", "glossário", "charge", "crítica", "potênciação", "crônica", "carta", "erosão", "fauna", "folclore", "substantivo", "substância", "pulmão", "nariz", "pacífico", "atlântico"]
+
+                if (bancoDePalavras.includes(valor)) {
+                    // alert("Você acertou")
+                    input.style.backgroundColor = "lime"
+                    setTimeout(() => {
+                        input.style.backgroundColor = "black"
+                    }, 500);
+                } else {
+                    // alert("Você errou")
+                    input.style.backgroundColor = "red"
+                    setTimeout(() => {
+                        input.style.backgroundColor = "black"
+                    }, 500);
+                }
+                input.value = ""
+            })
+        }) // fecha o DOM
+        
+    </script>
+</body>
+</html>
