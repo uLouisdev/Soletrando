@@ -9,7 +9,7 @@
 <body>
     <a href="../index.html" style="display: flex; align-items: center; flex-direction: column;">
         <img src="../assets/SOLETRANDO.png" alt="SOLETRANDO" style="height: auto; width: 300px;">
-        <img src="../assets/6ano.png" alt="6º ano" style="height: auto; width: 150px;">
+        <img src="../assets/9e1ano.png" alt="9º e 1º ano" style="height: auto; width: 150px;">
     </a>
     <div class="digitar">
         <form onsubmit="" id="formDigitar">
@@ -44,7 +44,7 @@
                 evento.preventDefault()
 
                 valor = input.value.trim()
-                const bancoDePalavras = ["transferidor", "perímetro", "frequência", "tabela", "evento", "aleatório", "representação", "fluxograma", "percentual", "orientação", "decupagem", "trambicagem", "traquinagem", "alvíssaras", "balaústre", "açucena", "negligente", "inconsistência", "transcendência", "excêntrica", "exagero", "caminhar", "coração", "gentileza", "jiló", "cozinhar", "hábito", "capacete", "ansioso", "exercício", "bênção", "princesa", "garagem", "azeite", "subir", "pêssego", "excepcional", "paisagem", "beleza", "cheiroso", "exuberante", "magnífico", "crescimento", "suscetível", "adversidade", "aquisição", "hipótese", "incentivo", "agressivo", "confortável"]
+                const bancoDePalavras = ["equação", "ângulo", "perímetro", "volume", "proporção", "hipotenusa", "circunferência", "radiano", "parábola", "teorema", "função", "logaritmo", "matriz", "determinante", "progressão", "derivada", "integral", "trigonometria", "combinatória", "probabilidade", "obsoleto", "opróbrio", "oscular", "pachorrento", "pacóvio", "pândego", "peculato", "pecúlio", "perdulário", "perene", "pérfido", "permuta", "pernóstico", "perscrutar", "plaga", "plissado", "procrastinar", "quimera", "recôndito", "ruar", "rubicundo", "sumidade", "suscitar", "taciturno", "tênue", "tergiversar", "ufanismo", "veneta", "vicissitudes", "vitupério", "eurásia", "geopolítica", "globalização", "hidrográfica", "supremacia", "falésia", "habitat", "monção", "orófilas", "microterritorialidade", "sincretismo", "historiografia", "anacronismo", "despotismo", "contrarreforma", "monoteísmo", "paleontólogo", "iconoclastia", "estratificação", "antropomorfismo"]
 
                 if (bancoDePalavras.includes(valor)) {
                     // alert("Você acertou")
@@ -67,7 +67,7 @@
 
         const sorteioClique = document.getElementById("clique")
         const rand = []
-        let qtdPalavras = 50
+        let qtdPalavras = 70
 
         sorteioClique.addEventListener("click", function() {
             if (rand.length < qtdPalavras) {

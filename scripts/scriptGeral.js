@@ -8,21 +8,6 @@ input.addEventListener("blur", function() {
 
 
 // alert("oi")
-const sorteioClique = document.getElementById("clique")
-const rand = []
-
-sorteioClique.addEventListener("click", function() {
-    if (rand.length < 10) {
-        let numero
-        do {
-            numero = (Math.floor(Math.random() * 10)) + 1
-        } while (rand.includes(numero))
-        rand.push(numero)
-        document.getElementById("valor").innerText = numero
-    } else {
-        document.getElementById("valor").innerText = "Todas as palavras ja foram sorteadas!"
-    }
-})
 
 
 
