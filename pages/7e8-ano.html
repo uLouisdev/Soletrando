@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soletrando</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <a href="../index.html" style="display: flex; align-items: center; flex-direction: column;">
+        <img src="../assets/SOLETRANDO.png" alt="SOLETRANDO" style="height: auto; width: 300px;">
+        <img src="../assets/7e8ano.png" alt="7º e 8º ano" style="height: auto; width: 150px;">
+    </a>
+    <div class="digitar">
+        <form onsubmit="" id="formDigitar">
+            <input type="text" name="palavra" id="textoDigitado" autocomplete="off" placeholder="Digite a palavra aqui">
+            <input type="submit" id="enviar">
+        </form>
+    </div>
+    <div class="areas">
+        <div class="area-sorteio">
+            <h3>O numero sorteado foi:</h3>
+            <p id="valor">_</p>
+            <button id="clique">Sortear</button>
+        </div>
+        <div class="area-timer">
+            <h3>Tempo para soletrar:</h3>
+            <p id="tempo">0.0s</p>
+            <button id="iniciarTempo">Iniciar</button>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/scriptGeral.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("formDigitar")
+            const input = document.getElementById("textoDigitado")
+            const somCorreto = new Audio("../assets/certo2.mp3")
+            const somErrado = new Audio("../assets/errado1.mp3")
+
+            form.addEventListener("submit", function(evento) {
+                evento.preventDefault()
+
+                valor = input.value.trim()
+                const bancoDePalavras = ["paralelas", "transversal", "estruturas", "regular", "internos", "correspondentes", "equidistantes", "triangulação", "poliedro", "congruência", "constantinopla", "eclético", "absolutista", "mediterrâneo", "islamismo", "cristianização", "península", "sufrágio", "renascença", "mecenas", "consequência", "ascensão", "subsídio", "coexistir", "privilégio", "discernir", "intransigente", "perspectiva", "freguês", "consciência", "idoneidade", "preconceito", "escassez", "procrastinar", "juventude", "intermediário", "excepcional", "heterogêneo", "vizinhança", "exaustão", "resiliência", "eminência", "intercessão", "paradoxo", "supérfluo", "ratificar", "benevolente", "preeminente", "oportunidade", "conjunção"]
+
+                if (bancoDePalavras.includes(valor)) {
+                    // alert("Você acertou")
+					clearInterval(intervalo)
+                    input.style.backgroundColor = "lime"
+                    somCorreto.play()
+                    setTimeout(() => {
+                        input.style.backgroundColor = "black"
+                    }, 500);
+                } else {
+                    // alert("Você errou")
+					clearInterval(intervalo)
+                    input.style.backgroundColor = "red"
+                    somErrado.play()
+                    setTimeout(() => {
+                        input.style.backgroundColor = "black"
+                    }, 500);
+                }
+                input.value = ""
+            })
+        }) // fecha o DOM
+
+        const sorteioClique = document.getElementById("clique")
+        const rand = []
+        let qtdPalavras = 50
+
+        sorteioClique.addEventListener("click", function() {
+            if (rand.length < qtdPalavras) {
+                let numero
+                do {
+                    numero = (Math.floor(Math.random() * qtdPalavras)) + 1
+                } while (rand.includes(numero))
+                rand.push(numero)
+                document.getElementById("valor").innerText = numero
+            } else {
+                document.getElementById("valor").innerText = "Todas as palavras ja foram sorteadas!"
+            }
+        })
+        
+    </script>
+</body>
+</html>

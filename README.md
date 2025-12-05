@@ -1,0 +1,29 @@
+# Soletrando SESI
+
+:warning: Esse soletrando foi feito exclusivamente para a conpetição do interclasses SESI Indaiatuba.
+
+## :point_up: Como jogar:
+Um monitor do jogo estará no controle do computador;
+Ele deve sortear um número;
+Outro monitor deve olhar o número e comparar com o ID da planilha do excel;
+Ao encontrar a palavra na planilha, o segundo monitor deve ler em voz alta a palavra e seu significado e perguntar se o jogador está pronto;
+Quando o jogador estiver pronto, o controlador do computador clica em "INICIAR" para começar a contagem regressiva do tempo, e logo em seguida começar a digitar exatamente as letras que o jogador indicar;
+Assim que o jogador terminar e confirmar que terminou, o controlador deve apertar na tecla Enter ou em "ENVIAR" para confirmar e ver se a palavra está certa ou errada - Se a cor do fundo ficar verde é porque acertou e se ficar vermelha é porque errou;
+Se o tempo acabar o controlador ou o outro monitor devem falar que a pessoa perdeu, o controlador envia a palavra do jeito que está e começa segue para que o próximo jogador jogue.
+
+
+## :rocket: Palavras:
+6º ano:
+["Transferidor", "Perímetro", "Frequência", "Tabela", "Evento", "Aleatório", "Representação", "Fluxograma", "Percentual", "Orientação", "Decupagem", "Trambicagem", "Traquinagem", "Alvíssaras", "Balaústre", "Açucena", "Negligente", "Inconsistência", "Transcendência", "Excêntrica", "Exagero", "Caminhar", "Coração", "Gentileza", "Jiló", "Cozinhar", "Hábito", "Capacete", "Ansioso", "Exercício", "Bênção", "Princesa", "Garagem", "Azeite", "Subir", "Pêssego", "Excepcional", "Paisagem", "Beleza", "Cheiroso", "Exuberante", "Magnífico", "Crescimento", "Suscetível", "Adversidade", "Aquisição", "Hipótese", "Incentivo", "Agressivo", "Confortável"]
+
+7º e 8º ano:
+["Paralelas", "Transversal", "Estruturas", "Regular", "Internos", "Correspondentes", "Equidistantes", "Triangulação", "Poliedro", "Congruência", "Constantinopla", "Eclético", "Absolutista", "Mediterrâneo", "Islamismo", "Cristianização", "Península", "Sufrágio", "Renascença", "Mecenas", "Consequência", "Ascensão", "Subsídio", "Coexistir", "Privilégio", "Discernir", "Intransigente", "Perspectiva", "Freguês", "Consciência", "Idoneidade", "Preconceito", "Escassez", "Procrastinar", "Juventude", "Intermediário", "Excepcional", "Heterogêneo", "Vizinhança", "Exaustão", "Resiliência", "Eminência", "Intercessão", "Paradoxo", "Supérfluo", "Ratificar", "Benevolente", "Preeminente", "Oportunidade", "Conjunção"]
+
+9º e 1º ano:
+["Equação", "Ângulo", "Perímetro", "Volume", "Proporção", "Hipotenusa", "Circunferência", "Radiano", "Parábola", "Teorema", "Função", "Logaritmo", "Matriz", "Determinante", "Progressão", "Derivada", "Integral", "Trigonometria", "Combinatória", "Probabilidade", "Obsoleto", "Opróbrio", "Oscular", "Pachorrento", "Pacóvio", "Pândego", "Peculato", "Pecúlio", "Perdulário", "Perene", "Pérfido", "Permuta", "Pernóstico", "Perscrutar", "Plaga", "Plissado", "Procrastinar", "Quimera", "Recôndito", "Ruar", "Rubicundo", "Sumidade", "Suscitar", "Taciturno", "Tênue", "Tergiversar", "Ufanismo", "Veneta", "Vicissitudes", "Vitupério", "Eurásia", "Geopolítica", "Globalização", "Hidrográfica", "Supremacia", "Falésia", "Habitat", "Monção", "Orófilas", "Microterritorialidade", "Sincretismo", "Historiografia", "Anacronismo", "Despotismo", "Contrarreforma", "Monoteísmo", "Paleontólogo", "Iconoclastia", "Estratificação", "Antropomorfismo"]
+
+2º e 3º ano:
+["Circunferência", "Progressão", "Polinômio", "Paralelogramo", "Radianos", "Logaritmo", "Convergência", "Isoperimétrico", "Comutatividade", "Transcendente", "Anáfase", "Bacteriófago", "Ecossistema", "Fotossíntese", "Esquistossomose", "Inquilinismo", "Mitose", "Procariontes", "Recessivo", "Testosterona", "Neocolonialismo", "Proletariado", "Anglicanismo", "Paleografia", "Parlamentarista", "Revisionismo", "Secularização", "Execução", "Racionalização", "Impeachment", "Ascensão", "Totalitarismo", "Historiograficamente", "Supremacia", "Beligerante", "Antropocentricidade", "Ultranacionalismo", "Anticonstitucional", "Interdependência", "Contemporaneidade", "Vicissitudes", "Prolegômenos", "Putrefato", "Tergiversar", "Xaropear", "Juvenelizante", "Kafkaesco", "Lauto", "Nódua", "Odiento", "Acrimônia", "Admoesta", "Adstrito", "Âmago", "Belicoso", "Beneplácito", "Capcioso", "Chistoso", "Corolário", "Cuntatório", "Dândi", "Desasnado", "Dissentir", "Empedernido", "Falaz", "Fenecimento", "Filaucioso", "Fleumático", "Frugal", "Graçolar", "Homizio", "Horrípilo", "Iconoclasta", "Idiossincrasia", "Inócuo", "Justapor", "Juvenelizante", "Kafkaesco", "Lauto", "Nitidificar", "Nódua", "Odiento", "Prolegômenos", "Putrefato", "Vicissitude", "Xaropear", "Eurásia", "Geopolítica", "Globalização", "Hidrográfica", "Supremacia", "Falésia", "Habitat", "Monção", "Orófilas", "Microterritorialidade", "Sincretismo", "Historiografia", "Anacronismo", "Despotismo", "Contrarreforma", "Monoteísmo", "Paleontólogo", "Iconoclastia", "Estratificação", "Antropomorfismo", "MISCIGENAÇÃO", "INTEMPERISMO", "MEGALÓPOLE", "CADUCIFÓLIA", "CONURBAÇÃO", "PEDOGÊNESE", "EXORREICO", "ACICULIFOLIADA", "XERÓFILA", "AEROFOTOGRAMETRIA", "Epistemologia", "Transcendência", "Dialética", "Pragmatismo", "Cosmovisão", "Empreendedorismo", "Sustentabilidade", "Resiliência", "Hegemonia", "Xenofobia"]
+
+Desempate:
+["Acrimônia", "Admoesta", "Adstrito", "Âmago", "Belicoso", "Beneplácito", "Capcioso", "Chistoso", "Corolário", "Cuntatório", "Dândi", "Desasnado", "Dissentir", "Empedernido", "Falaz", "Fenecimento", "Filaucioso", "Fleumático", "Frugal", "Graçolar", "Homizio", "Horrípilo", "Iconoclasta", "Idiossincrasia", "Inócuo", "Justapor", "Juvenelizante", "Kafkaesco", "Lauto", "Nitidificar", "Nódua", "Odiento", "Prolegômenos", "Putrefato", "Vicissitude", "Xaropear"]
